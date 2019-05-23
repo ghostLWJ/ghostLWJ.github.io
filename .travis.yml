@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "10"
+script:
+  - echo ""
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $ghostLWJ_github_page
+  keep_history: true
+  target-branch: master
+  on:
+    branch: ghostlwj
